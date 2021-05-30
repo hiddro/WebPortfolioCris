@@ -161,6 +161,14 @@ header .toggle.active{
     max-width: 400px;
 }
 
+.lab2Co{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    right: 220px;
+    max-width: 250px;
+}
+
 .labsem3{
     position: absolute;
     z-index: 1;
@@ -359,6 +367,22 @@ header .toggle.active{
 }
 
 /*Extras*/
+
+.espacioSemana{
+    padding: 0 50px 0 50px ;
+}
+
+.espacioLista{
+    color: #fff;
+    padding: 0 50px 2em 50px ;
+    list-style: none;
+    font-style: italic;
+    font-weight: 500;
+}
+.imagenSemana8{
+    width: 700px;
+    height: 440px;
+}
 
 .avatar{
     display: block;
