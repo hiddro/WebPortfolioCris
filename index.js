@@ -33,6 +33,11 @@ toggle.onclick = function (){
         const imgYS = document.querySelector('#imgys');
         imgYS.classList.toggle('addYoSoy');
     }
+
+    if(url.includes('experiencia')){
+        const imgYS = document.querySelector('#imgys');
+        imgYS.classList.toggle('addYoSoy');
+    }
 }
 
 function parallax(e){

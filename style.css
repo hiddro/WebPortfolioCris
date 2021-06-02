@@ -366,6 +366,44 @@ header .toggle.active{
     opacity: 0;
 }
 
+/*Experiencia*/
+.skills{
+    width: 100%;
+}
+
+.skills .box{
+    margin: 20px 0 20px 0;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #b053b1;
+
+}
+
+
 /*Extras*/
 
 .espacioSemana{
@@ -443,6 +481,16 @@ position: relative;
     flex-wrap: wrap;
     margin: 40px 0;
     */
+.contenedorSkills{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 80px 0 250px;
+    transform-origin: left;
+}
+
 .contenedor{
     position: relative;
     width: 1000px;
