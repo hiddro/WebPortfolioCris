@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 10 - Cristina Fuentes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id="lab" class="banner">
+        <header>
+            <span><img src="images/CrisAvatar.png" class="avatar"><a href="#" class="logo">Semana 10</a></span>
+            
+            <div class="toggle">
+
+            </div>
+        </header>
+
+        <img id="imglab" src="images/n8.png" class="lab2Co">
+
+        <div id="main">
+            <div class="inner">
+                <h1 class="espacioSemana">Diapositiva Semana 10</h1>
+
+                    <section class="sectionQS">
+                        <h2 class="espacioSemana">ARDUINO</h2><br>
+
+                        <h3 class="espacioSemana">Qué es?</h3>
+
+                        <p class="espacioSemana">
+                            El Arduino es una plataforma de prototipos electrónica de código abierto (open- source) basada en una placa con entradas y salidas. 
+                            Es un entorno de desarrollo que se encuentra basado en el lenguaje de programación Processing. Es un dispositivo el cual conecta el mundo 
+                            físico con el mundo virtual, o el analógico con el digital.
+                        </p>
+
+                        <p class="espacioSemana">
+                            Arduino es una plataforma abierta que facilita la programación de un microcontrolador. Los microcontroladores nos rodean en nuestra vida diaria, 
+                            usan los sensores para escuchar el mundo físico y los actuadores para interactuar con el mundo físico. Los microcontroladores leen de los sensores y 
+                            escriben sobre los actuadores.
+                        </p>
+
+                        <p class="espacioSemana">
+                            El hardware de Arduino consiste en una placa con un microcontrolador generalmente Atmel AVR con puertos de comunicación y puertos de entrada/salida. 
+                            Los microcontroladores más usados en las plataformas Arduino son el Atmega168, Atmega328, Atmega1280, ATmega8 por su sencillez, pero se está ampliando a 
+                            microcontroladores Atmel con arquitectura ARM de 32 bits y también a microcontroladores de Intel.
+                        </p>
+
+                        <p class="espacioSemana">
+                            Por otro lado, Arduino nos proporciona un software consistente en un entorno de desarrollo (IDE) que implementa el lenguaje de programación
+                            de arduino, las herramientas para transferir el firmware al microcontrolador y el bootloader ejecutado en la placa. La principal 
+                            característica del software y del lenguaje de programación es su sencillez y facilidad de uso.
+                        </p>
+
+                        <div class="row espacioSemana">
+                            <div class="col-6">
+                                <span class="image main"><img src="images/Semana9/arduino.png" class="formulaTam" alt="" /></span>
+                            </div>
+                        </div>
+
+                        <h3 class="espacioSemana">Partes de un Arduino</h3>
+
+                        <p class="espacioSemana">
+                            El Arduino como todos los componentes está formado por distintas partes como: entradas, salidas alimentación, comunicación y shields.
+                        </p>
+
+                        <ul class="espacioSemana espacioLista">
+                            <li><span>* Entradas</span>: Son los pines de nuestra placa que la utilizamos para hacer lecturas. En la placa “UNO”, son los pines digitales (0-13) 
+                                y los analógicos del (A0- A5).</li>
+                            <li><span>* Salidas</span>: Los pines de salidas se utilizan para el envío de señales. En ese caso los pines de salida son sólo los digitales (0- 13)</li>
+                            <li><span>* Otros Pines</span>: También tenemos oro tipo de pines como los GND (tierra), 5v los cuales proporciona 5 voltios, 3.3V que proporciona 3.3 voltios. 
+                                Los pines REF que hace referencia a los voltajes, TX (transmisión) y RX (lectura), los cuales son usados para la comunicación serial. RESET para 
+                                resetear. VIN para alimentar placa y los pines ICSP para comunicación SPI.</li>
+                            <li><span>* Alimentación</span>: El pin VIN, sirve para alimentar la placa, pero lo más normal es alimentarlo por el Jack de alimentación usando una tensión de (7- 12) 
+                                voltios. Por otro lado, también podemos alimentarlo por el puerto USB, pero en la mayoría de las aplicaciones no lo tenemos conectador hacia un ordenador. </li>
+                            <li><span>* Comunicación</span>: Nos comunicamos con el Arduino mediante USB para cargar los programas o enviar y recibir datos. No obstante, no es 
+                                la única forma que tiene el Arduino para comunicarse. </li>
+                            <li><span>* Shields</span>: Se les denomina así a las placas que se insertan sobre el Arduino o como modo de escudo ampliando sus posibilidades de uso.
+                                En el mercado existen infinidad de shields para cada tipo de Arduino. Las más comunes son Ethernet, wi-fi, Ultrasonidos, Pantallas LCD, 
+                                relés, matrices LED’S Y GLP.</li>
+                        </ul>
+
+                        <div class="row espacioSemana">
+                            <div class="col-6">
+                                <span class="image main"><img src="images/Semana9/arduino2.jpg" class="formulaTam" alt="" /></span>
+                            </div>
+                        </div>
+
+                        <p class="espacioSemana">
+                            El Arduino está constituido por el hardware por medio de un microcontrolador denominado Atmel AVR 8 BITS, el cual es programable con un 
+                            lenguaje de alto nivel, que está presente en la mayoría de los modelos de Arduino. 
+                        </p>
+
+                        <ul class="espacioSemana espacioLista">
+                            <li><span>* Usb</span>: La conexión USB se usa para conectar el diálogo a la placa del Arduino. Este aparato necesita una forma para estar 
+                                alimentado de manera eléctrica, y para ello se puede usar un cable USB, un cable de corriente o adaptador. Mediante este puerto la placa 
+                                se puede adaptar al computador y de esa manera puede ser programado.</li>
+                            <li><span>* Botón de Reinicio (Reset)</span>: Dicha tecla es la que enlaza de forma provisional para reiniciar los códigos en el que se encargan el 
+                                hardware del Arduino. Es por ello que no borra el programa que está cargado el Arduino en el microcontrolador, sino que lo inicia 
+                                nuevamente.</li>
+                            <li><span>* Microcontroladores</span>: Son circuitos que están preparados para realizar operaciones complejas de matemáticas y lo hace a una gran 
+                                velocidad. Son considerados como el cerebro de la placa de Arduino. Es decir, son la base de todo el desarrollo de cualquier tipo de 
+                                proyecto.</li>
+                            <li><span>* Regulador de voltaje</span>: Es un circuito que se encarga de mantener un voltaje en sus terminales. El regulador de voltaje tiene como 
+                                función controlar la cantidad de tensión que se debe usar en la mayoría de los modelos Arduino., es por ello por lo que no debe de 
+                                sobrepasar los 12 voltios.</li>
+                        </ul>
+
+                        <div class="row espacioSemana">
+                            <div class="col-6">
+                                <span class="image main"><img src="images/Semana9/USB.jpg" class="formulaTam" alt="" /></span>
+                            </div>
+                            <div class="col-6">
+                                <span class="image main"><img src="images/Semana9/USB2.png" class="formulaTam" alt="" /></span>
+                            </div>
+                        </div>
+
+                        <h3 class="espacioSemana">Característica de una placa Arduino</h3>
+
+                        <ul class="espacioSemana espacioLista">
+                            <li>* Microprosesador ATmega328</li>
+                            <li>* 13 pins para entradas y salidas digitales </li>
+                            <li>* 5 pins para entradas analógicas</li>
+                            <li>* Voltaje de operación 5V</li>
+                            <li>* Voltaje de entrada recomendado (7-12V)</li>
+                            <li>* Entradas analógicas pins 6</li>
+                            <li>* DC corriente 3.3 pin 50 mA</li>
+                            <li>* SRAM 1 KB</li>
+                            <li>* Velocidad de reloj 16 MHz</li>
+                            <li>* Completamente autónomo: Una vez programado no necesita estar conectado al PC.</li>
+                            <li>* Microcontrolador ATmega328</li>
+                            <li>* Voltaje de entrada límite (6-20V)</li>
+                        </ul>
+
+
+                        <h2 class="espacioSemana">Ley de OHM</h2><br>
+
+                        <p class="espacioSemana">
+                            George Simon Ohm, formuló en el año 1827 la que se conoce como ley de ohm. Es posiblemente una de las leyes fundamentales de la 
+                            electrónica. 
+                        </p>
+
+                        <p class="espacioSemana">
+                            Primero definió matemáticamente las tres magnitudes físicas principales de la electrónica que son: Diferencia de potencial (o Voltaje), 
+                            Resistencia y Corriente (o Intensidad).
+                        </p>
+
+                        <p class="espacioSemana">
+                            La ley de ohm relaciona estas tres magnitudes físicas, siendo su enunciado el siguiente. 
+                        </p>
+
+                        <p class="espacioSemana">
+                            La Corriente que circula por un circuito electrónico varía de forma directamente proporcional a la Diferencia de Potencial, e 
+                            inversamente con la Resistencia del circuito.  Su fórmula matemática es: 
+                        </p>
+                      
+                        <div class="row espacioSemana">
+                            <div class="col-6">
+                                <span class="image main"><img src="images/Semana9/ohm.jpg" class="formulaTam" alt="" /></span>
+                            </div>
+                        </div>
+
+
+                        <p class="espacioSemana">
+                            La ley de ohm se aplica a la totalidad de un circuito o de una parte de este. Analicemos la parte del circuito que analicemos, siempre se 
+                            cumplirá.
+                        </p>
+
+                        <p class="espacioSemana">
+                            Solo a título informativo, hay que comentar que para el análisis de circuitos de corriente alterna se sustituye la Resistencia (R) por la 
+                            Impedancia (Z), que tiene en cuenta los desfases entre Voltaje e Intensidad y los efectos de los campos electromagnéticos producidos en 
+                            los componentes electrónicos del circuito. Pero lo más normal en electrónica básica es analizar los circuitos en corriente continua o 
+                            aplicar simplificaciones que nos permitan analizarlos como si lo fueran.
+                        </p>
+
+                        <p class="espacioSemana">
+                            De la ecuación anterior podemos despejar los valores de Voltaje y de Resistencia. De esta manera, conocidos o medidos dos de ellos, 
+                            podremos calcular el tercero.
+                        </p>
+
+                        <div class="row espacioSemana">
+                            <div class="col-6">
+                                <span class="image main"><img src="images/Semana9/ohmormula.jpg" class="formulaTam" alt="" /></span>
+                            </div>
+                        </div>
+
+                        <p class="espacioSemana">
+                            Aunque la fórmula no es difícil de recordar, existe una regla nemotécnica conocida como el Triángulo de la Ley de Ohm que facilita su uso.
+                        </p>
+                        
+                        <div class="row espacioSemana">
+                            <div class="col-6">
+                                <span class="image main"><img src="images/Semana9/ohm2.jpg" class="formulaTam2" alt="" /></span>
+                            </div>
+                        </div>
+
+                        <p class="espacioSemana">
+                            En este triángulo, solo hay que tapar la variable que queremos calcular y aparecerán las otras dos variables con la posición que ocupan 
+                            en la ecuación que corresponda.
+                        </p>
+                        
+                        <div class="row espacioSemana">
+                            <div class="col-6">
+                                <span class="image main"><img src="images/Semana9/ohm3.jpg" class="formulaTam" alt="" /></span>
+                            </div>
+                        </div>
+
+                        <p class="espacioSemana">
+                            Por otro lado, la ley de ohm dice que la intensidad que circula por un conductor de electricidad es directamente suministrada a la 
+                            variación de voltaje y paralela e inversamente a la resistencia. Su importancia es debido a que un circuito se puede saber desde antes 
+                            la forma en que va a funcionar antes de conectarlo. Teniendo en cuenta la información de dos de los tres elementos que se manejan. 
+                        </p>
+
+
+                        <h2 class="espacioSemana">La Relación entre Corriente, Voltaje y Resistencia:</h2>
+
+                        <p class="espacioSemana">
+                            La ley de ohm describe matemáticamente la relación entre voltaje, corriente y resistencia en un circuito. La ley de ohm se expresa 
+                            por medio de tres formas equivalentes según qué cantidad se requiera determinar. Como se verá, la corriente y el voltaje son lineamientos 
+                            proporcionales. Sin embargo, la corriente y la resistencia son inversamente proporcionales. 
+                        </p>
+
+                        <h3 class="espacioSemana">Proyectos con Arduino:</h3>
+
+
+                        <p class="espacioSemana">
+                            <span>1.	Sensor aparca coches</span>: Este es el típico sensor que tienen los coches modernos. La función que cumple 
+                            es avisar de lo cerca o lejos que nos encontremos de otro vehículo u objeto a la hora de aparcar. Nos avisa con un sonido y 
+                            unas luces que te indican lo cerca o lejos que estás de colisionar. 
+                        </p>
+
+                        <p class="espacioSemana">
+                            Objetivo:  Simular el sistema que utilizan los coches más modernos al momento de aparcar. Nos sirve para no colisionar con otros 
+                            vehículos u objetos.  Si estamos lejos, el sonido se emite con una frecuencia baja y se enciende el LED verde, pero si estamos en una 
+                            posición intermedia, el pitido aumenta la frecuencia y se encenderá el LED amarillo. Por último, si estamos cerca el pitido será muy agudo, 
+                            una frecuencia alta, y se encenderá el LED rojo.
+                        </p>
+
+                        <p class="espacioSemana">
+                            Componentes:
+                        </p>
+
+                        <ul class="espacioSemana espacioLista">
+                            <li>* 3 x resistencia 220 ohm</li>
+                            <li>* 1 x LED rojo </li>
+                            <li>* 1 x LED amarillo</li>
+                            <li>* 1 x LED verde   </li>
+                            <li>* 1 x piezoeléctrico</li>
+                            <li>* 1 x sensor ultrasonidos</li>
+                        </ul>
+
+                        <div class="row espacioSemana">
+                            <div class="col-6">
+                                <span class="image main"><img src="images/Semana9/coche.jpg" class="formulaTam" alt="" /></span>
+                            </div>
+                        </div>
+
+
+                        <p class="espacioSemana">
+                            <span>2.	Semáforo Inteligente</span>: Uno de los proyectos Arduino más típico es el semáforo. En este caso se hará una vuelta de 
+                            tuerca y será inteligente. Este diseño con Arduino nos permitirá controlar dos semáforos dependiendo si hay algún coche esperando o no. 
+                        </p>
+
+                        <p class="espacioSemana">
+                            Este puede ser muy útil para aquellas personas que son aficionadas a las maquetas de tren u otro tipo. 
+                        </p>
+
+                        <p class="espacioSemana">
+                            Objetivo: Su objetivo es poder disimular un cruce con semáforos donde se detecte la presencia de los coches para activar o desactivar 
+                            los semáforos. Para esta simulación utilizaremos unos pulsadores los cuales nos indicarán que ha llegado un coche al cruce.
+                        </p>
+
+                        <p class="espacioSemana">
+                            Componentes:
+                        </p>
+
+                        <ul class="espacioSemana espacioLista">
+                            <li>* 6 x resistencia 220 ohm</li>
+                            <li>* 2 x LEDs</li>
+                            <li>* 2 x LEDs</li>
+                            <li>* 2 x LEDs</li>
+                            <li>* 2 x pulsadores</li>
+                            <li>* 2 x resistencia 10 K (pull down)</li>
+                        </ul>
+
+                        <div class="row espacioSemana">
+                            <div class="col-6">
+                                <span class="image main"><img src="images/Semana9/semafor.jpg" class="formulaTam" alt="" /></span>
+                            </div>
+                        </div>
+
+
+                        <p class="espacioSemana">
+                            <span>3.	Dado Eléctrico</span>: Los proyectos Arduino donde tocamos el dado lúdico, tienen mucho más éxito debido a su carácter 
+                            divertido. En este caso y va a simular un dado de 6 caras, un cubo. Existen otro tipo de dados que tienen más caras y se utilizan 
+                            en otro tipo de juegos.  
+                        </p>
+
+                        <p class="espacioSemana">
+                            Objetivo: El objetivo es lograr conseguir un número aleatorio del 1 al 6 cuando se apriete un pulsador. Este número saldrá representado 
+                            en un display de 7 segmentos. Se necesita llevar mucho ojo con los números aleatorios con Arduino ya que, si no se hacen bien, siempre 
+                            obtendrás el mismo o en sud efecto la misma secuencia.
+                        </p>
+
+                        <div class="row espacioSemana">
+                            <div class="col-6">
+                                <span class="image main"><img src="images/Semana9/dado.jpg" class="formulaTam" alt="" /></span>
+                            </div>
+                        </div>
+
+                        <p class="espacioSemana">
+                            Componentes:
+                        </p>
+
+                        <ul class="espacioSemana espacioLista">
+                            <li>* 1 x pulsador</li>
+                            <li>* 1 x display 7 segmentos</li>
+                            <li>* 1 x resistencia 10K (pull down)</li>
+                            <li>* 1 x resistencia 220 ohm</li>
+                        </ul>
+
+                        <div class="row espacioSemana">
+                            <div class="col-6">
+                                <span class="image main"><img src="images/Semana9/dado2.jpg" class="formulaTam" alt="" /></span>
+                            </div>
+                        </div>
+
+                        <div class="espacioSemana">
+                            <a href="lab-2.html" class="button primary small">Back</a>
+                        </div>
+
+                        <footer>
+                            <div class="contenedorf">
+                                <div class="sec aboutus">
+                                    <h2>Introducción</h2>
+                                    <p>
+                                        Sean Bienvenidos, a mi Bitácora Virtual diseñada por Cristina Fuentes Mejía y 
+                                        Edward Cordova Chávez, en este apartado verán información relacionada a mi curso
+                                        de LAB 2, y mis datos personales.   
+                                    </p>
+                                    <ul class="scif">
+                                        <li><a href="https://www.facebook.com/maria.fuentes.3762584"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/mary_fuentes_p/"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/hiddro/WebPortfolioCris"><i class="fab fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/crissfm"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://www.behance.net/gallery/120142351/Cristina-Fuentes-CV"><i class="fab fa-behance"></i></a></li>
+                                    </ul>
+                                </div>
+                    
+                                <div class="sec quickLinks">
+                                    <h2>Menú</h2>
+                                    <ul>
+                                        <li><a href="index.html">Inicio</a></li>
+                                <li><a href="quiensoy.html">Quién Soy?</a></li>
+                                <li><a href="experiencia.html">Experiencia</a></li>
+                                <li><a href="lab-2.html">LAB-2</a></li>
+                                <li><a href="contactame.html">Contáctame</a></li>
+                                    </ul>
+                                </div>
+                    
+                                <div class="sec contact">
+                                    <h2>Datos Contacto</h2>
+                                    <ul class="info">
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-map-marker"></i>
+                                            </span>
+                                            <span>
+                                                Jirón Estados Unidos 685 <br>
+                                                San Felipe - Jesús María <br>
+                                                Perú
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-phone"></i>
+                                            </span>
+                                            <p>
+                                                <a href="tel:51983478763">+51 983478763</a><br>
+                                                <a href="tel:51964109467">+51 964109467</a>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                            <p>
+                                                <a href="mailto:cristina.laia.1995@gmail.com">cristina.laia.1995@gmail.com</a>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </footer>
+                    
+                        <div class="copyrightText">
+                            <p>Coyright © 2021 Edward Cordova Chavez. All Rights Reserved.</p>
+                        </div>
+                    </section>
+            </div>
+        </div>
+
+        <ul id="menu" class="menu">
+            <li id="index"><a href="index.html">Inicio</a></li>
+            <li id="quiensoy"><a href="quiensoy.html">Quién Soy?</a></li>
+            <li id="experiencia"><a href="experiencia.html">Experiencia</a></li>
+            <li id="lab-2"><a href="lab-2.html">LAB-2</a></li>
+            <li id="contactame"><a href="contactame.html">Contáctame</a></li>
+        </ul>
+
+        
+
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

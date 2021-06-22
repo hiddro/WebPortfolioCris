@@ -21,6 +21,25 @@
     text-decoration: underline;
 }
 
+.sectionQS h3{
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.sectionQS span{
+    font-weight: bold;
+}
+
+.formulaTam{
+    width: 400px !important;
+    height: 200px;
+}
+
+.formulaTam2{
+    width: 500px !important;
+    height: 300px;
+}
+
 section{
     position: relative;
     width: 100%;
