@@ -16,6 +16,33 @@
 } */
 
 /*Inicio - Video Css*/
+.formatoSemana13V1{
+    width: 400px !important;
+    height: 500px !important;
+}
+
+.formatoSemana13V2{
+    width: 400px !important;
+    height: 400px !important;
+}
+
+.formatoSemana13V3{
+    width: 450px !important;
+    height: 450px !important;
+}
+
+.lab2Co2{
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    right: 100px;
+}
+
+.numerosPar{
+    width: 500px !important;
+}
+
+
 
 .formatoImagenS12{
     width: 400px !important;
